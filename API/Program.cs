@@ -1,8 +1,13 @@
+using API.Errors;
+using API.Extensions;
 using API.Helpers;
+using API.Middleware;
 using Core.Entities;
 using Core.Interface;
 using Infrastructure.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,10 +17,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
 builder.Services.AddDbContext<StoreContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddAplicaitonServices();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -38,6 +44,9 @@ using(var scope = app.Services.CreateScope())
         logger.LogError(ex, "an error occured during migration");
     }
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
+app.UseStatusCodePagesWithReExecute("/errors/{0}");
 app.UseStaticFiles();
 app.UseHttpsRedirection();
 
