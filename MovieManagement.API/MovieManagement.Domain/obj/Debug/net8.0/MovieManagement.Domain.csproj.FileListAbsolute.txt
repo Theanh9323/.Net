@@ -1,0 +1,11 @@
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\bin\Debug\net8.0\MovieManagement.Domain.deps.json
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\bin\Debug\net8.0\MovieManagement.Domain.dll
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\bin\Debug\net8.0\MovieManagement.Domain.pdb
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\MovieManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\MovieManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\MovieManagement.Domain.AssemblyInfo.cs
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\MovieManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\MovieManagement.Domain.dll
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\refint\MovieManagement.Domain.dll
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\MovieManagement.Domain.pdb
+C:\Users\admin\source\repos\MovieManagement.API\MovieManagement.Domain\obj\Debug\net8.0\ref\MovieManagement.Domain.dll
