@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-app.component",
+      "appliesTo": "component-interaction/src/app/app.component.html",
+      "type": "launch"
+    }
+  ]
+}
